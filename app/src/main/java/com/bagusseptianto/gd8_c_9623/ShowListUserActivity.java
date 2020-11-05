@@ -83,4 +83,16 @@ public class ShowListUserActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        loadUser();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadUser();
+    }
 }

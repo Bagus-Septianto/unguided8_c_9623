@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
-            android:text="Create User"
+            android:text="Edit User"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -76,12 +76,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
                     android:hint="NIM">
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNim"
+                        android:inputType="text"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="text" />
+                        android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -129,7 +128,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginRight="20dp"
-                        android:checked="true"
                         android:text="Laki-laki" />
                     <RadioButton
                         android:id="@+id/rbPerempuan"
@@ -176,10 +174,10 @@
             android:backgroundTint="@color/pink" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCreate"
+            android:id="@+id/btnUpdate"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="CREATE"
+            android:text="UPDATE"
             android:textColor="@color/black"
             android:layout_alignParentRight="true"
             android:layout_marginHorizontal="10dp"

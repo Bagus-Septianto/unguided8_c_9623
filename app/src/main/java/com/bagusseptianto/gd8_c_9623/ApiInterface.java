@@ -25,4 +25,22 @@ public interface ApiInterface {
                                   @Field("fakultas") String fakultas,
                                   @Field("jenis_kelamin") String jenis_kelamin,
                                   @Field("password") String password);
+
+    @POST("user/delete/{id}")
+    Call<UserResponse> deleteUser(@Path("id") String id);
+
+    @POST("user/update/{id}")
+    @FormUrlEncoded
+    Call<UserResponse> updateUser(@Path("id") String id,
+                                  @Field("nama") String nama,
+                                  @Field("prodi") String prodi,
+                                  @Field("fakultas") String fakultas,
+                                  @Field("jenis_kelamin") String jenis_kelamin,
+                                  @Field("password") String password);
+
+    @POST("login")
+    @FormUrlEncoded
+    Call<UserResponse> loginUser(@Field("nim") String nim,
+                                 @Field("password") String password);
+
 }
